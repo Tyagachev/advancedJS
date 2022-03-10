@@ -7,10 +7,13 @@ header{
     display: flex;
     justify-content: end;
     margin: 0 0 10px 0;
+    border: 1px solid black;
+    height: 60px;
+    align-items: center;
 }
 .btn-cart {
     min-width: 130px;
-    min-height: 40px;
+    height: 40px;
     border-radius:20px;
     background-color: rgba(127, 236, 18, 0.575);
 }
