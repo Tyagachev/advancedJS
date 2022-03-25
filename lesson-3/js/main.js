@@ -111,7 +111,7 @@ list.render ();
 
 class Basket {        // Класс корзины
         addGood ()  {
-            return fetch(`${API}/getBasket.json`)
+            fetch(`${API}/getBasket.json`)
             .then(text => text.json())
             .then (data => {
                 data.contents.forEach(element => {
@@ -120,7 +120,7 @@ class Basket {        // Класс корзины
             })
             
         }
-     
+
         removeGood () {
 
         }
@@ -133,8 +133,6 @@ class Basket {        // Класс корзины
     }
     let listBasket = new Basket()
     listBasket.addGood ()
-    oops2 = JSON.stringify(listBasket)
-    console.log (oops2)
 
 class BasketElements {   // Класс элементов корзины
     render() {
