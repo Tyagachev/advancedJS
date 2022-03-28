@@ -44,7 +44,7 @@ header{
 
 .add {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .id_product {
@@ -65,5 +65,11 @@ header{
 
 .add {
     display: flex;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }

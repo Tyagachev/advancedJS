@@ -115,7 +115,15 @@ class Basket {        // Класс корзины
             .then(text => text.json())
             .then (data => {
                 data.contents.forEach(element => {
-                    document.getElementById('1').insertAdjacentHTML('beforeend',`<p class="id__product">${element.id_product}</p><p class="name">${element.product_name}</p><p class="price_p">${element.price}</p><p class="quantity">${element.quantity}</p>`)
+                    document.getElementById('1').insertAdjacentHTML('beforeend',
+                    `<div class="product-item" product-id="${element.id_product}">
+                    <img src="${'https://via.placeholder.com/200x150'}">
+                    <div class ="description">
+                    <h3 class="name">${element.product_name}</h3>
+                    <p class="price_p">${element.price}</p>
+                    <p class="quantity">${element.quantity}</p>
+                    <button class="buy-btn">Купить</button>
+                    </div>`)
                 });
             })
             
